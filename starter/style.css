@@ -1,0 +1,41 @@
+.wrap {
+	position: relative;
+	width: 80%;
+	margin: auto;
+	background-color: lightgray;
+	border-radius: 5px;
+	padding: 50px 0px;
+}
+#cote {
+	margin-left: 10px;
+	border-left: 2px solid yellow;
+	padding-left: 20px;
+	padding-right: 10px;
+	word-spacing: 2px;
+	font-variant: 100;
+	font-style: italic;
+}
+#parent {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background-color: #081407;
+	padding: 6px;
+	margin: 0 auto;
+	box-shadow: 0 4px 6px 4px rgba(0,0,0,.5);
+}
+#clock {
+	text-align: center;
+	text-transform: uppercase;
+	position: absolute;
+	top: 80px;
+	font-size: 40px;
+	color: white;
+}
+#try {
+	background-color: orange;
+	transition-property: display;
+	transition-duration: 5s;
+	transform: translate(0);
+}
