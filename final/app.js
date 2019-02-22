@@ -12,11 +12,11 @@
 
 
 // adding event Handlers
-document.querySelector('#fname').addEventListener('blur',checkFname);
-document.querySelector('#lname').addEventListener('blur',checkLname);
-document.querySelector('#email').addEventListener('blur',checkEmail);
-document.querySelector('#pass').addEventListener('blur',checkPass);
-document.querySelector('#repass').addEventListener('blur',checkRepass);
+document.querySelector('#fname').addEventListener('blur', checkFname);
+document.querySelector('#lname').addEventListener('blur', checkLname);
+document.querySelector('#email').addEventListener('blur', checkEmail);
+document.querySelector('#pass').addEventListener('blur', checkPass);
+document.querySelector('#repass').addEventListener('blur', checkRepass);
 
 // making event handler for first name;
 function checkFname() {
