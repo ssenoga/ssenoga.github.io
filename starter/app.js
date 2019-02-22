@@ -19,15 +19,15 @@ setInterval(() => {
 },2000);
 
 
-// setInterval(() =>{
-// 	const x = 10;
-// 	textTranfer.style.display = "none";
+setInterval(() =>{
+	const x = 10;
+	textTranfer.style.display = "none";
 	
-// },5000);
-// function cb(){
-// 	setInterval(() =>{
-// 	textTranfer.style.display = "block";
+},5000);
+function cb(){
+	setInterval(() =>{
+	textTranfer.style.display = "block";
 
-// 	},5500);
-// }
-// cb();
+	},5500);
+}
+cb();
