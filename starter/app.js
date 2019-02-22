@@ -3,6 +3,13 @@ const clock = document.querySelector('#clock');
 const mill = document.querySelector('#mill');
 const textTranfer = document.querySelector('#cote');
 
+// adding event Handlers
+document.querySelector('#fname').addEventListener('blur',checkFname);
+document.querySelector('#lname').addEventListener('blur',checkLname);
+document.querySelector('#email').addEventListener('blur',checkEmail);
+document.querySelector('#pass').addEventListener('blur',checkPass);
+document.querySelector('#repass').addEventListener('blur',checkRepass);
+
 setInterval(() =>{
 	const time = new Date().toLocaleTimeString();
 	clock.innerText = time;
@@ -31,3 +38,10 @@ function cb(){
 	},5500);
 }
 cb();
+
+// making event handler for first name;
+function checkFname() {
+	console.log("we are in");
+}
+
+
