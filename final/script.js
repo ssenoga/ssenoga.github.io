@@ -6,7 +6,7 @@
 //   }
 // }
 
-const EasyLogin = function(http){
+const EasyLogin = function(){
   this.http = new XMLHttpRequest();
 }
 // get

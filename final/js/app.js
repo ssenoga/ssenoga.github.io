@@ -57,5 +57,34 @@ function checkRepass(e) {
 	e.preventDefault();
 }
 
-const http = new EasyLoginClass();
-http.get('./app.json');
+// user loging in
+document.querySelector('#userLogin').addEventListener('click',validate);
+
+function validate(e){
+	const userData = document.getElementById('loginusername').value;
+	const http = new EasyLogin();
+	http.get('app.json',function(data){
+		data.forEach(function(user){
+			const err = true;
+			if(user.name === userData){
+				console.log(user.name);
+				
+			} else{
+				const container = document.querySelector('.col-md-5');
+				const form = document.querySelector('#eddy');
+				const sms = document.createElement('h4');
+				document.querySelector('#loginusername').classList += ' is-invalid';
+				document.querySelector('#loginpassword').classList += ' is-invalid';
+				sms.textContent = "Invalid details";
+				// sms.classList = 'is-invalid';
+				container.insertBefore(sms,form);
+			}
+			
+		});
+		// console.log(userData);
+	});
+	
+	
+	e.preventDefault();
+}
+
