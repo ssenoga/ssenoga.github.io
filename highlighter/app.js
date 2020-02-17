@@ -61,9 +61,14 @@ function colorElem(arr,elem){
  * @param array
 */
 function mapFunc(arr){
-    arr.map( (book, index) => {
-        result.innerHTML += `<li> ${index + 1}: ${ book.toLowerCase() }</li>`;
-    })
+    if(arr.length > 0){
+
+        arr.map( (book, index) => {
+            result.innerHTML += `<li> ${index + 1}: ${ book.toLowerCase() }</li>`;
+        })
+    }else {
+        result.innerHTML = '<h1>No result</h1>';
+    }
 }
 
 /**
