@@ -10,7 +10,7 @@ const searchLength = search.value.length;
 
 // data to display on the app
 
-const data = ['css for web','css for mobile','javascript the good parts','you do not know javascript yet','the javascript bible','javascript the missing manual','heads first javascript','php the beginner reference','php novice to ninja','the complete php reference','jquery novice to ninja'];
+const data = ['css for web','css for mobile','javascript the good parts','you do not know javascript yet','the javascript bible','javascript the missing manual','heads first javascript','php the beginner reference','php novice to ninja','the complete php reference','jquery novice to ninja','the code complete','learn react in 30 days'];
 /** 
  * @description 'This function iniatally loads all the data in the dom'
 */
@@ -61,9 +61,14 @@ function colorElem(arr,elem){
  * @param array
 */
 function mapFunc(arr){
-    arr.map( (book, index) => {
-        result.innerHTML += `<li> ${index + 1}: ${ book.toLowerCase() }</li>`;
-    })
+    if(arr.length > 0){
+
+        arr.map( (book, index) => {
+            result.innerHTML += `<li> ${index + 1}: ${ book.toLowerCase() }</li>`;
+        })
+    }else {
+        result.innerHTML = '<h1>No result</h1>';
+    }
 }
 
 /**
