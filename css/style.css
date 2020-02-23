@@ -83,9 +83,11 @@ header nav a:hover {
 /*showcase*/
 #showcase {
     min-height: 400px;
-    background: url('showcase.jpg') no-repeat  0 -400px;
+    background: url('showcase.jpg');
+    background-repeat:  no-repeat;
+    background-position:  -250px -200px;
     text-align: center;
-    color: #fff;
+    color: rgba(243, 234, 234, 0.986);
 }
 #showcase #heading {
    text-transform: capitalize;
@@ -110,19 +112,26 @@ header nav a:hover {
 }
 #newsletter form {
     float: right;
-    margin-top: -5px;
+    margin-top: -15px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
 }
+.close {
+    visibility: hidden;
+    height: 0;
+}
+
 #newsletter input[type='email'] {
     width: 250px;
-    height: 25px;
-    padding: 5px 20px 5px 15px;
+    padding: 10px 20px;
+    border-radius: 6px;
 }
 #newsletter input[type='submit'] {
-    height: 25px;
     border: 0;
     background: orangered;
     color: white;
-    padding: 6px 9px 6px 9px;
+    padding: 10px 20px;
+    border-radius: 6px;
 } 
 /*boxes*/
 #boxes {
@@ -177,6 +186,8 @@ aside {
     float: right;/*
     margin-bottom: 12px;*/
     background-color: #233323;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     height: auto;
 }
 aside .stories a{
@@ -186,19 +197,21 @@ aside .stories a{
 .stories {
     text-align: center;
     padding: 9px;
+    border-bottom-style: groove;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 aside .stories a:hover {
     color: orangered;
     opacity: .6;
 }
-.news-1,.news-3 {
-    background-color: white;
+.news-content {
     padding: 10px;
     border-radius: 5px;
+    border-bottom-style: groove;
 }
-.news-2,.news-4{
-    padding: 10px;
-    border-radius: 5px;
+.news-content:nth-child(even){
+    background-color: white;
 }
 
 /*styling the contact.html page*/
