@@ -6,12 +6,13 @@ const close = document.querySelector('#close');
 
 subscribeBtn.addEventListener('submit',function(e){
     
+    const email = e.target.value;
+    const regxp = //;
+
     if(!(newsletter.classList.contains('close') && close.classList.contains('close'))){
         newsletter.classList.add('close');
         close.classList.add('close');
     }
-
-    alert('I ran');
 
     e.preventDefault();
 

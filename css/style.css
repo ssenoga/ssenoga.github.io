@@ -11,10 +11,30 @@ body {
     padding: 0;
     margin: 0;
 }
+
+ul {
+    list-style: none;
+}
+
 /* style for the button in the news page*/
 .btn {
     padding: 12px 0px;
 }
+
+.img {
+    width: 120px;
+    height: 100px;
+}
+/* text classes */
+.text-center {
+    text-align: center;
+}
+
+.main-heading {
+    font-size: 2.5em;
+    padding: 10px;
+}
+
 .btn button {
     border: none;
     padding: 10px;
@@ -81,36 +101,40 @@ header nav a:hover {
 }
 
 /*showcase*/
-#showcase {
+.showcase {
     min-height: 400px;
-    background: url('showcase.jpg');
+    background: linear-gradient(to left, rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('showcase.jpg');
     background-repeat:  no-repeat;
-    background-position:  -250px -200px;
+    background-attachment: fixed;
+    background-position:  0px -200px;
     text-align: center;
-    color: rgba(243, 234, 234, 0.986);
+    color: #fff;
 }
-#showcase #heading {
+.heading {
    text-transform: capitalize;
    margin-bottom: 14px;
    padding: 100px 100px 10px 100px;
    font-size: 3em;
 }
-#showcase  p{
-   font-size: 20px;
-   padding: 0 100px;
+.text-muted {
+    font-size: 1.6em;
+    font-weight: normal;
+    word-spacing: .3em;
+    line-height: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
 }
-#newsletter {/*
+.bg-dark {/*
     margin-top: -5px;*/
     margin-bottom: 0;
     padding: 35px;
     background-color:#233333 ;
     color: #fff;
 }
-#newsletter h2 {
+.bg-dark h2 {
     float: left;
     margin-top: -5px;
 }
-#newsletter form {
+.bg-dark form {
     float: right;
     margin-top: -15px;
     box-sizing: border-box;
@@ -121,12 +145,12 @@ header nav a:hover {
     height: 0;
 }
 
-#newsletter input[type='email'] {
+.bg-dark input[type='email'] {
     width: 250px;
     padding: 10px 20px;
     border-radius: 6px;
 }
-#newsletter input[type='submit'] {
+.bg-dark input[type='submit'] {
     border: 0;
     background: orangered;
     color: white;
@@ -137,17 +161,32 @@ header nav a:hover {
 #boxes {
     margin-top: 10px;
 }
-#boxes .box {
-    width: 33%;
-    text-align: center;
-    float: left;
-    padding: 10px;
-}
-#boxes.box img {
+
+.img-round {
+    width: 100px;
     height: 100px;
-    width: 130px;
     border-radius: 50px;
 }
+
+#boxes .box {
+    width: 31%;
+    text-align: center;
+    float: left;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 6px;
+    line-height: 1.8em;
+    transition: width 1s, padding 1s;
+}
+
+#boxes .box:hover{
+    width: 32%;
+    padding: 26px;
+    border: 1px solid lightcoral;
+    box-shadow: 5px 5px 5px 5px rgba(117, 78, 117, 0.6) ;
+    z-index: 1000;
+}
+
 footer h5 {/*
     margin-top: 20px;*/
     padding: 20px;
@@ -156,6 +195,18 @@ footer h5 {/*
     text-align: center;
 
 }
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-item {
+    flex: 1;
+    width: 32%;
+    text-align: center;
+}
+
 /* syling the news.html page*/
 #news-main {
     font-size: 16px;
@@ -183,8 +234,7 @@ footer h5 {/*
 }
 aside {
     width: 30%;
-    float: right;/*
-    margin-bottom: 12px;*/
+    float: right;
     background-color: #233323;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
