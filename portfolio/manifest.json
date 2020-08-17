@@ -1,0 +1,15 @@
+{
+  "short_name": "Ssenoga Edward App",
+  "name": "Ssenoga Edward All Projects App",
+  "icons": [
+    {
+      "src": "images/9eiizjgy.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
