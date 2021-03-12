@@ -4,35 +4,110 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ssenoga Edward (Software Developer)</title>
-    <link rel="stylesheet" href="css/styles.css" />
-    <script>
+    <link rel="stylesheet" href="scss/styles.css" />
+    <!-- <script>
       window.location.href = "/portfolio";
-    </script>
+    </script> -->
   </head>
   <body>
-    <section>
-      <nav>
+    <section class="hero" id="home">
+      <nav class="container">
         <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">Projects</a></li>
-          <li><a href="">Contact Me</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#aboutme">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
         </ul>
       </nav>
+      <div class="hero__container">
+        <div class="container__text">
+          <div class="text">
+            <h2>Ssenoga Edward</h2>
+            <ul>
+              <li>Javascript</li>
+              <li>React</li>
+              <li>React Native</li>
+              <li>Node</li>
+              <li>Core PHP</li>
+            </ul>
+            <button class="btn btn-contact">Contact Me</button>
+          </div>
+          <div class="image">
+            <img src="img/20201225_150531.jpg" alt="Ssenoga Edward" />
+          </div>
+        </div>
+        <div class="container__social">
+          <p>
+            <a href="https://github.com/ssenoga">
+              <img src="img/icons/gt.svg" alt="github" />
+            </a>
+          </p>
+          <p>
+            <a href=""> <img src="img/icons/ld.svg" alt="linkedin" /> </a>
+          </p>
+          <p>
+            <a href="http://twitter.com/@ssenoga4real">
+              <img src="img/icons/twitter.svg" alt="twitter" />
+            </a>
+          </p>
+          <p>
+            <a href="https://www.facebook.com/senoga.edward.9">
+              <img src="img/icons/fb.svg" alt="facebook" />
+            </a>
+          </p>
+        </div>
+      </div>
     </section>
 
-    <section class="hero">
-      <article class="hero__article">
-        <h3 class="hero__articleHeader">The perfect fit for you</h3>
-      </article>
-      <article class="hero__article">
-        <img src="img/20201225_150531.jpg" alt="me" class="hero__image" />
-      </article>
+    <section class="resume" id="aboutme">
+      <div class="container">
+        <h2>About Me</h2>
+        <div class="resume__container">
+          <div class="resume__container__text">
+            <h3>Simple Preview</h3>
+            <p>
+              My name is ssenoga edward, 23, am a full stack web developer
+              passionate about working with a group of inovative people from
+              anywhere around the world.
+            </p>
+            <p>
+              Am holding a bachelor in computer science from kampala university,
+              aprivate owned university located in Gaba,Uganda.
+            </p>
+            <p>
+              I was introduced to the usage of computers not a long time ago and
+              from that moment i feel in love computers and i set my journey to
+              learning how those machines operate. I love experimenting
+              different techniques on the web and thats how i master some of the
+              common patterns used for developing modern websites and
+              technologies
+            </p>
+            <p>
+              As most of the senior programmers/ developers around the world, i
+              kicked of my journey with HTML and CSS. During those times i
+              didn't even own a laptop to code from but i used my mobile phone
+              to write simple HTML files. Seeing the result of what i have done
+              immediately pushed me further to read more and understand the
+              basics of computer programming.
+            </p>
+          </div>
+          <div class="resume__container__preview">
+            <div class="box">
+              <img src="img/20201225_150531.jpg" />
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    <section></section>
+    <section class="projects" id="projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="projects__container"></div>
+      </div>
+    </section>
     <footer>
-      <ul class="social-media">
-        <li></li>
-      </ul>
+      <p>All Rights Reserved</p>
     </footer>
+
+    <script src="js/app.js"></script>
   </body>
 </html>
